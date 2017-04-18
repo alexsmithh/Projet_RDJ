@@ -12,13 +12,14 @@
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->assetUrl("/css/bootstrap.min.css") ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->assetUrl("/css/bootstrap-theme.min.css") ?>">
 		<link rel="stylesheet" type="text/css" href="<?php echo $this->assetUrl("/css/global.css") ?>">
+        <link rel="stylesheet" type="text/css" href="<?php echo $this->assetUrl("/css/entete.css") ?>">
 		<script src='https://www.google.com/recaptcha/api.js'></script>
 	</head>	
 	<body>
+        <?php echo $this -> insert("partials/entete") ?>
+        <br/>
     	<header>
-            <section id="cont-logo">
-                <img src="<?php echo $this->assetUrl("/img/logo.jpg") ?>" id="logo">
-            </section>
+            
             
     	    <section id="cont-menu">
                 <ul id="menu-ul-global">
